@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>360</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">Library</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>600</width>
+      <height>360</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #efefef;</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="Books">
+     <property name="statusTip">
+      <string>Books menu</string>
+     </property>
+     <attribute name="title">
+      <string>Tab 1</string>
+     </attribute>
+     <widget class="QLineEdit" name="book_search">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>420</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="book_table">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>560</width>
+        <height>200</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="book_search_button">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>20</y>
+        <width>60</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="statusTip">
+       <string>Search for book</string>
+      </property>
+      <property name="text">
+       <string>Search</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="book_delete">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>250</y>
+        <width>140</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="statusTip">
+       <string>Delete row</string>
+      </property>
+      <property name="text">
+       <string>Delete books</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="book_add">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>250</y>
+        <width>140</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="statusTip">
+       <string>Add a new row</string>
+      </property>
+      <property name="text">
+       <string>Add row</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="book_save">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>250</y>
+        <width>140</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="statusTip">
+       <string>Save row</string>
+      </property>
+      <property name="text">
+       <string>Save books</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="book_issue">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>250</y>
+        <width>140</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="statusTip">
+       <string>Save row</string>
+      </property>
+      <property name="text">
+       <string>Issue books</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="book_refresh">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>20</y>
+        <width>60</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="statusTip">
+       <string>Search for book</string>
+      </property>
+      <property name="text">
+       <string>Refresh</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Issues">
+     <property name="statusTip">
+      <string>Issues menu</string>
+     </property>
+     <attribute name="title">
+      <string>Tab 2</string>
+     </attribute>
+     <widget class="QTableWidget" name="issue_table">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>560</width>
+        <height>200</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="issue_refresh">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>250</y>
+        <width>280</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="statusTip">
+       <string>Delete issue</string>
+      </property>
+      <property name="text">
+       <string>Refresh</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="issue_return">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>250</y>
+        <width>280</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="statusTip">
+       <string>Delete issue</string>
+      </property>
+      <property name="text">
+       <string>Return books</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <action name="actionBook_issues">
+   <property name="text">
+    <string>Book issues</string>
+   </property>
+  </action>
+  <action name="actionNew_book">
+   <property name="text">
+    <string>New book</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+   <property name="toolTip">
+    <string>Quit application</string>
+   </property>
+   <property name="statusTip">
+    <string>Quit application</string>
+   </property>
+  </action>
+  <action name="actionBooks_menu">
+   <property name="text">
+    <string>Books menu</string>
+   </property>
+   <property name="toolTip">
+    <string>View books menu</string>
+   </property>
+   <property name="statusTip">
+    <string>View books menu</string>
+   </property>
+  </action>
+  <action name="actionIssues_menu">
+   <property name="text">
+    <string>Issues menu</string>
+   </property>
+   <property name="toolTip">
+    <string>View issues menu</string>
+   </property>
+   <property name="statusTip">
+    <string>View issues menu</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
